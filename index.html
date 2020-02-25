@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Instagram</title>
+    </head>
+    <body>
+        <div class="navbar" id="main-nav">
+            <div class="container">
+                <div class="left">
+                    <div class="icon-left insta-icon">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="icon-left vertical">|</div>
+                    <div class="icon-left insta-button">
+                        <img src="./picture/instagram.png" />
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="search">
+                        <span><i class="fa fa-search errspan"></i></span>
+                        <input type="text" placeholder="Tìm kiếm" />
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="icon-right compass">
+                        <i class="fa fa-compass"></i>
+                    </div>
+                    <div class="icon-right heart">
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+                    <div class="icon-right avatar">
+                        <img src="./picture/avatar.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="about">
+                    <div class="avatar">
+                        <img src="./picture/avatar.jpg" />
+                    </div>
+                    <div class="infomation">
+                        <div class="first">
+                            <div class="name">truong.leh</div>
+                            <div class="edit-profile">
+                                <a href="#">Chỉnh sửa trang cá nhân</a>
+                            </div>
+                            <a href="#" class="setting"><i class="fa fa-cog"></i></a>
+                        </div>
+                        <div class="second">
+                            <div class="post same-style"><b>1</b> bài viết</div>
+                            <div class="follower same-style">
+                                <b>8</b> người theo dõi
+                            </div>
+                            <div class="following same-style">
+                                Đang theo dõi <b>31</b> người dùng
+                            </div>
+                        </div>
+                        <div class="third"><b>Quang Trường</b></div>
+                        <div class="fourth"><b>.</b></div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="tab-child">
+                        <a href="#" class="tab-element posts">
+                            <i class="fa fa-th"></i>BÀI VIẾT
+                        </a>
+                        <a href="#" class="tab-element igtv">
+                            <i class="fa fa-tv"></i>IGTV
+                        </a>
+                        <a href="#" class="tab-element saved">
+                            <i class="fa fa-bookmark-o"></i>ĐÃ LƯU
+                        </a>
+                        <a href="#" class="tab-element tagged">
+                            <i class="fa fa-user"></i>ĐƯỢC GẮN THẺ
+                        </a>
+                    </div>
+                </div>
+                <div class="picture">
+                    <div class="post-pic">
+                        <img src="./picture/pic-1.jpg" />
+                        <div class="overlay">
+                            <div class="like"><i class="fa fa-heart"></i>  4</div>
+                            <div class="comment"><i class="fa fa-comment"></i></i>  0</div>
+                        </div>
+                    </div>
+                 
+                <div class="footer">
+                    <div class="first">
+                        <a href="#" class="element">GIỚI THIỆU VỀ CHÚNG TÔI</a>
+                        <a href="#" class="element">TRỢ GIÚP</a>
+                        <a href="#" class="element">BÁO CHÍ</a>
+                        <a href="#" class="element">API</a>
+                        <a href="#" class="element">VIỆC LÀM</a>
+                        <a href="#" class="element">QUYỀN RIÊNG TƯ</a>
+                        <a href="#" class="element">ĐIỀU KHOẢN</a>
+                        <a href="#" class="element">THƯ MỤC</a>
+                        <a href="#" class="element">TRANG CÁ NHÂN</a>
+                        <a href="#" class="element">HASTAG</a>
+                        <a href="#" class="element">NGÔN NGỮ</a>
+                    </div>
+                    <div class="second">
+                        <div class="">
+                            <i class="fa fa-copyright"></i> 2020 INSTAGRAM FROM
+                            FACEBOOK
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {
+                myFunction();
+            };
+
+            // Get the navbar
+            var navbar = document.getElementById("main-nav");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.remove("main-navbar");
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                    navbar.classList.add("main-navbar");
+                }
+            }
+        </script>
+    </body>
+</html>
