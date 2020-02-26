@@ -12,6 +12,12 @@ a {
     color: black;
 }
 
+.vertical {
+    border-left: 1px solid black;
+    height: 25px;
+    margin-top: 5px;
+}
+
 .navbar {
     background-color: #ffffff;
     padding-top: 20px;
